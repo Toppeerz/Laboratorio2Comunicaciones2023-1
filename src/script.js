@@ -188,12 +188,3 @@ function hexadecimalABinario(numH){
     document.getElementById("posicionIngresada").value = '';
     document.getElementById("cantidadIngresada").value = '';
 }
-/*console.log(hexadecimalADecimal('F'));//15
-console.log(hexadecimalADecimal('FF'));//255
-console.log(hexadecimalADecimal('FFF'));//4095
-console.log(hexadecimalABinario('F'));//1111
-console.log(hexadecimalABinario('FF'));//11111111
-console.log(hexadecimalABinario('FFF'));//111111111111
-console.log(hexadecimalAIP('FFFFFFFF'));
-console.log(hexadecimalAIP('FFFFFFFFA'));
-console.log(hexadecimalAIP('FFFFFA'));*/
