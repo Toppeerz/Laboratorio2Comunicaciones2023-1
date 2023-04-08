@@ -172,6 +172,7 @@ function hexadecimalABinario(numH){
     binarioAux.trimEnd();
     return binarioAux;
 }
+//hola
 
  /**
   * Este método limpia todos los campos.
