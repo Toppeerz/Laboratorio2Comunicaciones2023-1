@@ -6,21 +6,49 @@
     <title>Título de la página</title>
   </head>
   <body>
-    <h1>Análisis de datos hexadecimales</h1>
-    <h2>Juan Pablo Alviz - Brayan Marin Puerta - Juan David Ortega - Marzo 2023 </h2>
+    <script src="script.js" type="text/javascript"></script>
+    
+    
+    <h1 class="intro1">Análisis de datos hexadecimales</h1>
+    <h2 class="intro2">Juan Pablo Alviz - Brayan Marin Puerta - Juan David Ortega - Marzo 2023 </h2>
     <form>
-      <label for="texto" id="textoLabel1">Ingrese su codigo hexadecimal:</label>
-      <input type="text" id="texto" name="texto"><br><br>
-      <p>Selecciona una opción:</p>
-      <input type="radio" id="opcionDecimal" name="opcion" value="opcionDecimal">
-      <label for="opcion1">Entero decimal</label><br>
-      <input type="radio" id="opcionHexadecimal" name="opcion" value="opcionHexadecimal">
-      <label for="opcion2">Entero hexadecimal</label><br>
-      <input type="radio" id="opcionIP" name="opcion" value="opcionIP">
-      <label for="opcion3">Direccion IP</label><br><br>
-      <button class="botonAceptar"> Aceptar </button><button class="botonLimpiar">Limpiar</button><br><br>
-      <label for="otroTexto">Otro campo de texto:</label>
-      <input type="text" id="otroTexto" name="otroTexto"><br><br>
+
+      <label for="texto" id="textolabel">Ingrese su codigo hexadecimal:</label>
+      <input type="text" id="textoIngresado" name="texto"><br><br>
+
+
+      <div class=" po-ca">
+        <label for="texto" id="posicion">Posición:</label>
+        <input type="text" id="posicionIngresada" name="texto2">
+  
+        <label for="texto" id="cantidad">Cantidad:</label>
+        <input type="text" id="cantidadIngresada" name="texto2">
+      </div>
+
+      <label for="texto" id="textoSeleccionarOpcion">Selecciona una opción:</label>
+
+      <div class="radio-buttons">
+      <input type="radio" id="opcionDecimal" name="opcionR" value="opcion1">
+      <label for="opcionR">Entero decimal</label><br>
+
+      <input type="radio" id="opcionHexadecimal" name="opcionR" value="opcion2">
+      <label for="opcionR">Entero hexadecimal</label><br>
+
+      <input type="radio" id="opcionIP" name="opcionR" value="opcion3">
+      <label for="opcionR">Direccion IP</label><br><br>
+
+      <input type="radio" id="opcionBinaria" name="opcionR" value="opcion4">
+      <label for="opcionR">Entero Binario</label><br>
+      </div>
+      
+      <button class="botonAceptar" type="button" onclick="ejecutarPeticion()">Aceptar</button>
+      <button class="botonLimpiar" type="button" onclick="limpiarCampos()">Limpiar</button><br><br>
+
+      <label for="textoRespuesta" class="etiqueta">Cadena convertida:</label>
+      <input type="text" id="textoRespuesta" name="otroTexto" readonly class="input"><br><br>  
+  
+      
+      
     </form>
   </body>
 </html>
