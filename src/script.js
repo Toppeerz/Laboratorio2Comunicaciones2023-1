@@ -98,7 +98,7 @@ function cortarCandena(cadena){
         return null;
     }
 
-    return cadena.substr(posInicial, (cantidad*2));
+    return cadena.substr((posInicial*2), (cantidad*2));
 }
 
 /**
