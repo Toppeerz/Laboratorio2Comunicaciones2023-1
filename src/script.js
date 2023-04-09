@@ -88,7 +88,7 @@ function cortarCandena(cadena){
 
     if((posInicial+cantidad) > cadena.length){
         alert("La cantidad de bytes que se quiere tomar" 
-        + " a partir de la posición" + posInicial + "\nsupera el tamaño" 
+        + " a partir de la posición " + (posInicial/2) + "\nsupera el tamaño" 
         + " de la cadena.");
         return null;
     }
