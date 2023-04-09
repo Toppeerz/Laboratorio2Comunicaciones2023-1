@@ -117,7 +117,7 @@ function validarHexadecimal(texto){
  * hexadecimal a un número decimal o de base diez.
  */
 function hexadecimalADecimal(numH){
-    numH = numH.replace(/[^0-9a-f-A-F]/gi, '');
+    numH = numH.replace(/[^0-9a-fA-F]/gi, '');
 
     return Number.parseInt(numH, 16);
 }
