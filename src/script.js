@@ -78,15 +78,15 @@ function cortarCandena(cadena){
         return null;
     }
 
-    let posInicial = parseInt(valorPosInicial, 10);
-    let cantidad = parseInt(valorCantidad, 10);
+    let posInicial = parseInt(valorPosInicial, 10)*2;
+    let cantidad = parseInt(valorCantidad, 10)*2;
 
     if(posInicial > cadena.length){
         alert("La posición inicial supera el tamaño de la cadena.");
         return null;
     }
 
-    if((posInicial+(cantidad*2)) > cadena.length){
+    if((posInicial+cantidad) > cadena.length){
         alert("La cantidad de bytes que se quiere tomar" 
         + " a partir de la posición" + posInicial + "\nsupera el tamaño" 
         + " de la cadena.");
@@ -98,7 +98,7 @@ function cortarCandena(cadena){
         return null;
     }
 
-    return cadena.substr((posInicial*2), (cantidad*2));
+    return cadena.substr(posInicial, cantidad);
 }
 
 /**
@@ -143,9 +143,9 @@ function hexadecimalAIP(numH){
          * y a la última posición no se coloca.
          */
         if(i == 3){
-            ip += hexadecimalADecimal(numH.substr(i,2));
+            ip += hexadecimalADecimal(numH.substr(i*2,2));
         }else{
-            ip += hexadecimalADecimal(numH.substr(i,2)) + '.';
+            ip += hexadecimalADecimal(numH.substr(i*2,2)) + '.';
         }
     }
     return ip;
