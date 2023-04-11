@@ -35,7 +35,7 @@ function ejecutarPeticion(){
             case 'opcion1':
                 respuesta = "0x"+ numH+ " => " + hexadecimalADecimal(numH);
                 break;
-            //Opcion 2 convertir...
+            //Opcion 2 mostrar en hexadecimal
             case 'opcion2':
                 respuesta = "0x"+ numH+ " => " + numH;
                 break;
